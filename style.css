@@ -1,0 +1,176 @@
+body {
+  background:DarkSlateGray;
+  color: #666;
+  font: 90%/180% Arial, Helvetica, sans-serif;
+  width: 900px;
+  max-width: 96%;
+  margin: 0 auto;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-filter: blur(4px);
+}
+
+a {
+  color: #69C;
+  text-decoration: none;
+}
+a:hover {
+  color: #F60;
+}
+
+p {
+  margin: 0 0 20px;
+
+}
+
+input {
+  outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; 
+}
+
+
+input[type=search] {
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 230px;
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type=search]:focus {
+  background-color: #fff;
+  border-color: #66CC75;
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+  color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.movieCard {
+  padding: 4px 4px 4px 8px;
+  background-color: rgba(0,0,0,0.9);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-radius: 6px;
+  position: relative;
+  overflow: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $lato;
+  font-size: 2.2em;
+  color: white;
+}
+
+.tagline {
+  display: block;
+  padding-bottom: 0.25em;
+  color: Crimson;
+  font-size: 1.3em;
+  font-family: $oswald;
+  font-style: italic;
+}
+
+.data {
+  display: block;
+  color: Crimson;
+  font-size: 1.6em;
+  line-height: 1.1em;
+}
+
+.main-description {
+  grid-column: 1;
+}
+
+.poster-container {
+  grid-column: 2;
+}
+
+.poster {
+  height: 420px;
+  float: right;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+}
+
+.col1 {
+  grid-column: 1;
+}
+
+.col2 {
+  grid-column: 2;
+}
+
+.col3 {
+  grid-column: 3;
+}
+
+.headerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.searchBar {
+  text-align: center;
+}
+
+.invisibleContent{
+ visibility:hidden;
+}
+
+.visibleContent{
+ visibility:visible;
+}
+
+.headPart {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  text-align: center;
+  position: relative;
+}
+
+.logoPart {
+  grid-column: 1;
+}
+
+.searchPart {
+  grid-column: 2;
+  position: absolute;
+  bottom: 12%;
+  right:2%;
+}
